@@ -93,7 +93,6 @@ function saveGame() {
   } else{
     $.post('/games', {'state': board}, (response) => {
       currentGame = response.data.id;
-      debugger
     })
   }
 }
