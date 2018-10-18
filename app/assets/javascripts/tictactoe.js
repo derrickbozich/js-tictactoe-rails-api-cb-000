@@ -82,10 +82,13 @@ function loadGame(element){
 function saveGame() {
   let board = getBoard();
   let result = board.every((space) => space == '' )
-  debugger
-  if (!result) {
-    $.post('/games', {'state': board})
-  }
+  $.ajax({
+    url: "/games",
+    context: document.body
+  })
+    if (!result) {
+      $.post('/games', {'state': board})
+    }
 }
 
 function clearGame() {
