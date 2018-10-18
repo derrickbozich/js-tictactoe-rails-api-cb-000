@@ -121,19 +121,7 @@ function attachListeners(){
   })
 
   //add listener to previous game button
-  $('#previous').on('click', function previousGames() {
-    $.get('/games', response => {
-
-    let string = ''
-    for (let el of response.data){
-      string += `<li><a href="#" data-id="${el.id}"onclick="loadGame(this);return false;" data-url="/games/${el.id}">${el.id}</a></li>`
-      //need to make it so a tags dont take you to new link
-    }
-
-    let html = `<ul>${string}</ul>`
-    $('#games').html(html)
-    })
-  })
+  $('#previous').on('click', () => previousGames())
 
   //add a listener to save game button
   $('#save').on('click', () => saveGame())
