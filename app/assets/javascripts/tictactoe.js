@@ -87,7 +87,7 @@ function saveGame() {
   if (currentGame) {
     debugger
     $.ajax({
-      url: "/games",
+      url: `/games/${currentGame}`,
       type: "PATCH",
       data: {'state': board}
     })  
