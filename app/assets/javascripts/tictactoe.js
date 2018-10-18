@@ -90,12 +90,8 @@ function saveGame() {
       data: {'state': board}
     })  
   } else  if (!empty){
-    
+    $.post('/games', {'state': board})
   }
-  
-    if (!result) {
-      $.post('/games', {'state': board})
-    }
 }
 
 function clearGame() {
