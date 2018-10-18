@@ -84,6 +84,15 @@ function loadGame(element){
   })
 }
 
+function saveGame() {
+
+  let board = getBoard();
+  let result = board.every((space) => space == '' )
+  if (!result) {
+    $.post('/games', {'state': board})
+  }
+}
+
 
 
 
