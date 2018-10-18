@@ -70,11 +70,19 @@ function loadGame(element){
   $.get(element.dataset.url, function(response){
     let board = response.data.attributes.state
   
-    debugger
 
     $('td').text((index, value) =>{
       return board[index]
     });
+
+    let count = 0;
+    for (let element of $('td') ){
+      debugger
+    }
+
+    
+
+    
 
     debugger
 
