@@ -100,6 +100,7 @@ function clearGame() {
   $('td').text((value) => {
     return ''
   });
+  currentGame = null;
 }
 
 function previousGames() {
