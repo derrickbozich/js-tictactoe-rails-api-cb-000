@@ -76,6 +76,10 @@ function loadGame(element){
     }
     debugger
 
+    $('td').text((index, value) =>{
+      return board[index]
+    }
+
 
   })
 }
