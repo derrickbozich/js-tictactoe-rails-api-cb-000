@@ -99,6 +99,17 @@ function clearGame() {
   });
 }
 
+function previousGames() {
+  $.get('/games', response => {
+  let string = ''
+  for (let el of response.data){
+    string += `<li><a href="#" data-id="${el.id}"onclick="loadGame(this);return false;" data-url="/games/${el.id}">${el.id}</a></li>`
+  }
+  let html = `<ul>${string}</ul>`
+  $('#games').html(html)
+  })
+}
+
 
 
 
