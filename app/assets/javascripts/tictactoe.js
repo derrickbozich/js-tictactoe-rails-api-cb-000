@@ -119,7 +119,6 @@ function openSpaces(){
   // let result = board.every((space) => space != '' )
   let result = board.every((space) => {
     space != 'X' && space != 'O'
-    debugger
   })
   debugger
 }
