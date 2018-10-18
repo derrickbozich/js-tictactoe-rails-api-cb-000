@@ -57,11 +57,8 @@ function doTurn(element){
   updateState(element);
   turn++;
   if (checkWinner()) {
-    turn = 0;
-    $('td').text((value) => {
-      return ''
-    });
-  } else if (openSpaces()) {
+    clearGame();
+  } else if (!openSpaces()) {
   
   } else {
     setMessage("Tie game.")
