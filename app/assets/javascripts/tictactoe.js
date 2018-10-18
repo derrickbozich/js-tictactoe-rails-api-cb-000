@@ -71,6 +71,7 @@ function loadGame(element){
     let board = response.data.attributes.state
     let newBoard = []
     for (let i = 0; i < $('td').length; i++){
+      debugger
       newBoard[i].push(board[i])
     }
     debugger
