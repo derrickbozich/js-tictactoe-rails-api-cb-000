@@ -69,7 +69,6 @@ function doTurn(element){
 function loadGame(element){
   $.get(element.dataset.url, function(response){
     let board = response.data.attributes.state
-    debugger
     let currentGame = response.data.id
     $('td').text((index, value) =>{
       return board[index]
