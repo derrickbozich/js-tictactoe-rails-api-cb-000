@@ -84,7 +84,7 @@ function loadGame(element){
 function saveGame() {
   let board = getBoard();
   let empty = board.every((space) => space == '' )
-  if (currentGame) {
+  if (currentGame && !checkWinner()) {
     $.ajax({
       url: `/games/${currentGame}`,
       type: "PATCH",
