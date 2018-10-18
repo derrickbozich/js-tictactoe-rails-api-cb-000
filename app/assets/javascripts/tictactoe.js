@@ -126,8 +126,6 @@ function attachListeners(){
   //add a listener to save game button
   $('#save').on('click', () => saveGame())
 
-
-
   //add a listener to clear game button
   $('#clear').on('click', () => clearGame())
 }
