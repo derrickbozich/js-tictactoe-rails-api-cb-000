@@ -59,7 +59,8 @@ function doTurn(element){
   if (checkWinner()) {
     clearGame();
   } else if (!openSpaces()) {
-  
+    setMessage("It's a draw.")
+    clearGame();
   } else {
     setMessage("Tie game.")
   }
