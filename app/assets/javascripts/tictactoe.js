@@ -91,7 +91,9 @@ function saveGame() {
       data: {'state': board}
     })  
   } else{
-    $.post('/games', {'state': board})
+    $.post('/games', {'state': board}, (response) => {
+      debugger
+    })
   }
 }
 
