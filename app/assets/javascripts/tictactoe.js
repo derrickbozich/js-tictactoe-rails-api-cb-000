@@ -80,15 +80,7 @@ function loadGame(element){
       element.innerText != "" ? count++ : count += 0;
       
     }
-    debugger
     turn = count;
-    
-
-    
-
-    debugger
-
-
   })
 }
 
