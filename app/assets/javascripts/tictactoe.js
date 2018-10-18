@@ -4,7 +4,6 @@ var turn = 0;
 
 $(function(){
   attachListeners();
-
 })
 
 function player(){
@@ -69,16 +68,12 @@ function doTurn(element){
 function loadGame(element){
   $.get(element.dataset.url, function(response){
     let board = response.data.attributes.state
-  
-
     $('td').text((index, value) =>{
       return board[index]
     });
-
     let count = 0;
     for (let element of $('td') ){
-      element.innerText != "" ? count++ : count += 0;
-      
+      element.innerText != "" ? count++ : count += 0;  
     }
     turn = count;
   })
