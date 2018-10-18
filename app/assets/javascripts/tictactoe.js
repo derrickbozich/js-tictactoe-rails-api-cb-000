@@ -92,6 +92,13 @@ function saveGame() {
   }
 }
 
+function clearGame() {
+  turn = 0;
+  $('td').text((value) => {
+    return ''
+  });
+}
+
 
 
 
