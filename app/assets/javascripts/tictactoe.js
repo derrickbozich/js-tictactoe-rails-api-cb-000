@@ -85,7 +85,6 @@ function saveGame() {
   let board = getBoard();
   let empty = board.every((space) => space == '' )
   if (currentGame) {
-    debugger
     $.ajax({
       url: `/games/${currentGame}`,
       type: "PATCH",
