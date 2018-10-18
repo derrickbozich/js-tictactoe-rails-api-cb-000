@@ -69,11 +69,7 @@ function doTurn(element){
 function loadGame(element){
   $.get(element.dataset.url, function(response){
     let board = response.data.attributes.state
-    let newBoard = []
-    for (let i = 0; i < $('td').length; i++){
-      debugger
-      newBoard[i].push(board[i])
-    }
+  
     debugger
 
     $('td').text((index, value) =>{
