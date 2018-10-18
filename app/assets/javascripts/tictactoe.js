@@ -118,7 +118,7 @@ function openSpaces(){
   let board = getBoard();
   // let result = board.every((space) => space != '' )
   let result = board.every((space) => {
-    return space == ''
+    return space != ''
   })
   debugger
 }
