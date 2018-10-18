@@ -81,7 +81,7 @@ function loadGame(element){
       
     }
     debugger
-
+    turn = count;
     
 
     
