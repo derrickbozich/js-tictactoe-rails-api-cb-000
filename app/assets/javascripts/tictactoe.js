@@ -85,7 +85,6 @@ function loadGame(element){
 }
 
 function saveGame() {
-
   let board = getBoard();
   let result = board.every((space) => space == '' )
   if (!result) {
@@ -119,17 +118,9 @@ function attachListeners(){
   })
 
   //add a listener to save game button
-  $('#save').on('click', function saveGame() {
-
-    let board = getBoard();
-    let result = board.every((space) => space == '' )
-    if (!result) {
-      $.post('/games', {'state': board})
-
-    }
+  $('#save').on('click', () => saveGame())
 
 
-  })
 
   //add a listener to clear game button
   $('#clear').on('click', function() {
