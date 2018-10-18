@@ -70,8 +70,8 @@ function loadGame(element){
   $.get(element.dataset.url, function(response){
     let board = response.data.attributes.state
     let newBoard = []
-    for (let [index, node] of $('td')){
-      node.innerText
+    for (let i = 0; i < $('td').length; i++){
+      newBoard[i].push(board[i])
     }
     debugger
 
