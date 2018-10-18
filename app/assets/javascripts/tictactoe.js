@@ -123,7 +123,7 @@ function attachListeners(){
 
 
   //add a listener to clear game button
-  $('#clear').on('click', function() {
+  $('#clear').on('click', function clearGame() {
     turn = 0;
     $('td').text((value) => {
       return ''
