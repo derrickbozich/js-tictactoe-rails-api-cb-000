@@ -10,7 +10,6 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require handlebars
 //= require jquery
 //= require jquery_ujs
 //= require tictactoe
