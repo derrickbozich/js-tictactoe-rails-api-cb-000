@@ -77,6 +77,7 @@ function loadGame(element){
 
     let count = 0;
     for (let element of $('td') ){
+      element.innerText != "" ? count++ : count += 0;
       debugger
     }
 
