@@ -90,7 +90,7 @@ function saveGame() {
       type: "PATCH",
       data: {'state': board}
     })  
-  } else if (!empty){
+  } else{
     $.post('/games', {'state': board})
   }
 }
