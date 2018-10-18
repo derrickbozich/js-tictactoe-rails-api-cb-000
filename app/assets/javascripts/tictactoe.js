@@ -84,7 +84,8 @@ function saveGame() {
   let result = board.every((space) => space == '' )
   $.ajax({
     url: "/games",
-    context: document.body
+    type: "Patch",
+    data: {'state': board}
   })
     if (!result) {
       $.post('/games', {'state': board})
