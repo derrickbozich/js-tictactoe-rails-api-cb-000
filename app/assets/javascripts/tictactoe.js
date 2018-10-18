@@ -114,6 +114,11 @@ function previousGames() {
   })
 }
 
+function isBoardFull(){
+  let board = getBoard();
+  board.every((space) => space != '' )
+}
+
 
 
 
