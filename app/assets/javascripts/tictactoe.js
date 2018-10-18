@@ -55,7 +55,6 @@ function checkWinner(){
 // Group of functions and steps done every turn
 function doTurn(element){
   updateState(element);
-  saveGame();
   turn++;
   if (checkWinner()) {
     clearGame();
