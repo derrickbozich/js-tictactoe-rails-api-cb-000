@@ -74,7 +74,7 @@ function loadGame(element){
 
     $('td').text((index, value) =>{
       return board[index]
-    }
+    });
 
     debugger
 
