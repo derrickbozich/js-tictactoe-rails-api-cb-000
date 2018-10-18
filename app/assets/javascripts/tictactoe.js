@@ -114,7 +114,7 @@ function previousGames() {
   })
 }
 
-function boardHasSpace(){
+function hasOpenSpace(){
   let board = getBoard();
   return board.every((space) => space != '' )
 }
