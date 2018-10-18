@@ -76,6 +76,8 @@ function loadGame(element){
       return board[index]
     }
 
+    debugger
+
 
   })
 }
