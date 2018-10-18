@@ -70,7 +70,7 @@ function loadGame(element){
   $.get(element.dataset.url, function(response){
     let board = response.data.attributes.state
     debugger
-    let currentGame = response.data.attributes.id
+    let currentGame = response.data.id
     $('td').text((index, value) =>{
       return board[index]
     });
