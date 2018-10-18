@@ -97,10 +97,11 @@ function saveGame() {
 
 function clearGame() {
   turn = 0;
+  currentGame = null;
   $('td').text((value) => {
     return ''
   });
-  currentGame = null;
+  
 }
 
 function previousGames() {
