@@ -61,6 +61,8 @@ function doTurn(element){
     $('td').text((value) => {
       return ''
     });
+  } else if (openSpaces()) {
+  
   } else {
     setMessage("Tie game.")
   }
