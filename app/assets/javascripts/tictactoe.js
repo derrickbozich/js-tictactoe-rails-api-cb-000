@@ -90,7 +90,7 @@ function saveGame() {
       type: "PATCH",
       data: {'state': board}
     })  
-  } else{
+  } else if (!empty){
     $.post('/games', {'state': board}, (response) => {
       currentGame = response.data.id;
     })
